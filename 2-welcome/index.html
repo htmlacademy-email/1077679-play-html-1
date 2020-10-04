@@ -32,6 +32,15 @@
 			padding: 0;
 		}
 
+		a {
+			text-decoration: none;
+		}
+
+		.menu {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
 		h2 {
 			text-align: center;
 		}
@@ -108,18 +117,21 @@
 			line-height: 35px;
 			text-align: center;
 		}
+
 		.title-h3 {
 			font-size: 24px;
 			line-height: 28px;
 			color: #02BAD3;
 			text-align: left;
 		}
+
 		.post-title-text {
 			font-size: 16px;
 			line-height: 19px;
 			color: #141414;
 			text-align: left;
 		}
+
 		.post-title-text2 {
 			font-size: 18px;
 			line-height: 21px;
@@ -147,7 +159,7 @@
 				<td>
 					<table class="table-center" bgcolor="#ffffff" align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
 						<tr>
-							<td>
+							<td align="center" style="padding-top: 56px; padding-bottom: 48px;">
 								<a href="https://htmlacademy.ru/" target="_blank" title="Переход на сайт">
 									<img width="186.67" height="32" src="img/logo.png" alt="Лого Play HTML" title="Лого Play HTML" />
 								</a>
@@ -156,23 +168,21 @@
 					</table>
 				</td>
 			</tr>
-		</table>
-		<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td>
-					<table class="table-center" bgcolor="#ffffff" align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
+				<td style=" padding-bottom: 26px;">
+					<table class="table-center" bgcolor="#ffffff" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="padding-left: 32px; padding-right: 32px;">
 						<tr>
 							<td>
-								<a href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с курсами">Курсы</a>
+								<a class="menu red" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с курсами"><b>Курсы</b></a>
 							</td>
 							<td>
-								<a href="https://htmlacademy.ru/vebinar/about" terget="_blank" title="Переход на страницу с вебинарами">Вебинар</a>
+								<a class="menu d-blue" href="https://htmlacademy.ru/vebinar/about" terget="_blank" title="Переход на страницу с вебинарами"><b>Вебинар</b></a>
 							</td>
 							<td>
-								<a href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу все о школе">О школе</a>
+								<a class="menu lg-blue" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу все о школе"><b>О школе</b></a>
 							</td>
 							<td>
-								<a href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с распродажей">Распродажа</a>
+								<a class="menu yellow" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с распродажей"><b>Распродажа</b></a>
 							</td>
 						</tr>
 					</table>
@@ -180,36 +190,39 @@
 			</tr>
 		</table>
 
+
 		<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
 				<td>
 					<table class="table-center" bgcolor="#ffffff" align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
 						<tr>
-							<td align="left" style="padding:0;Margin:0;background-color: #0B379B;">
+							<td align="left" style="padding:0;Margin:0;background-color: #0B379B; padding-right: 32px; padding-left: 32px;">
 								<!--[if mso]><table style="width:600px" cellpadding="0"
 									cellspacing="0"><tr><td style="width:393px" valign="top"><![endif]-->
-								<table align="left" class="float-left" cellpadding="0" cellspacing="0" border="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:left;">
+								<table align="left" class="float-left" cellpadding="0" cellspacing="0" border="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:left; padding-top: 32px;">
 									<tr>
-										<td align="left" style="padding:0;Margin:0;width:393px;">
+										<td align="left" style="padding:0;Margin:0;width:361px;">
 											<table width="100%" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
 												<tr>
-													<td>
-														<p class="lg-blue">Здравствуйте, {{name}}</p>
+													<td style="padding-bottom: 26px;">
+														<p class="lg-blue base">Здравствуйте, {{name}}</p>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<p style="color: #ffffff;">
-															Благодарим вас за регистрацию на курс «Начальный html+css».
+														<p class="base" style="color: #ffffff;">
+															<span>Благодарим вас за регистрацию на курс «Начальный html+css».</span></br>
+															</br>
+															Курс стартует 1 июля в 17.00 по московскому времени.
+															Письма со ссылками для входа в кабинет придут на
+															указанную почту за день до старта курса.
 														</p>
 													</td>
 												</tr>
 												<tr>
 													<td>
 														<p style="color: #ffffff;">
-															Курс стартует 1 июля в 17.00 по московскому времени.
-															Письма со ссылками для входа в кабинет придут на
-															указанную почту за день до старта курса.
+
 														</p>
 													</td>
 												</tr>
@@ -221,11 +234,11 @@
 								<!--[if mso]></td><td style="width:0px"></td><td style="width:207px" valign="top"><![endif]-->
 								<table align="right" class="float-right" cellpadding="0" cellspacing="0" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
 									<tr>
-										<td width="207" style="Margin: 0; padding: 0; width: 207px;">
+										<td width="207" style="Margin: 0; padding: 0; width: 175px;">
 											<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
 												<tr>
 													<td>
-														<img width="175" height="269" src="img/croods-standing.png" alt="Фото человек стоит с ноутбуком" title="Фото человек стоит с ноутбуком"/>
+														<img width="175" height="269" src="img/croods-standing.png" alt="Фото человек стоит с ноутбуком" title="Фото человек стоит с ноутбуком" />
 													</td>
 												</tr>
 											</table>
@@ -252,31 +265,17 @@
 						<tr>
 							<td style="padding-bottom: 20px;">
 								<p class="base">
-									Вы будете изучать теорию и методику на примере учебного проекта, который разработали наши эксперты. А применить полученные знания на практике вы сможете, выполняя задания по личному проекту.
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td style="padding-bottom: 20px;">
-								<p class="base">
-									В этом вам будет помогать наставник - опытный специалист, который проверит домашние задания и поделится секретами мастерства. А если у вас останутся вопросы, наставник сможет ответить на них на консультации.
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td style="padding-bottom: 20px;">
-								<p class="base">
-									После завершения курса вам нужно будет подготовить свой проект к защите — убедиться, что он реализован в соответствии с техническим заданием.
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p class="base">
+									Вы будете изучать теорию и методику на примере учебного проекта, который разработали наши эксперты. А применить полученные знания на практике вы сможете, выполняя задания по личному проекту.</br>
+									</br>
+									В этом вам будет помогать наставник - опытный специалист, который проверит домашние задания и поделится секретами мастерства. А если у вас останутся вопросы, наставник сможет ответить на них на консультации.</br>
+									</br>
+									После завершения курса вам нужно будет подготовить свой проект к защите — убедиться, что он реализован в соответствии с техническим заданием.</br>
+									</br>
 									Желаем вам продуктивной работы на интенсиве и успешной защиты. У вас всё получится, мы в вас верим!
 								</p>
 							</td>
 						</tr>
+
 					</table>
 				</td>
 			</tr>
@@ -291,7 +290,7 @@
 								<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
 									<tr>
 										<td style="padding-bottom: 24px;">
-											<h2 align="center" class="lg-blue">Ведущие курса</h2>
+											<h2 align="center" class="lg-blue"><b>Ведущие курса</b></h2>
 										</td>
 									</tr>
 								</table>
@@ -300,67 +299,67 @@
 
 						<tr>
 							<td style="padding-bottom: 48px;">
-								<table  class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
+								<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
 									<td width="168">
 										<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
 											<tr>
 												<td align="center">
-													<img width="88" height="88"  src="img/leading1.png" alt="Фото ведущего Антон Громов" title="Фото ведущего Антон Громов" />
+													<img width="88" height="88" src="img/leading1.png" alt="Фото ведущего Антон Громов" title="Фото ведущего Антон Громов" />
 												</td>
-												<tr>
-													<td>
-														<p class="base" style="text-align: center;"><b>Антон Громов</b></br>
-															Фронтенд-разработчик в Cats Development</p>
+											<tr>
+												<td>
+													<p class="base" style="text-align: center;"><b>Антон Громов</b></br>
+														Фронтенд-разработчик в Cats Development</p>
 
-													</td>
-												</tr>
-											</tr>
-										</table>
-									</td>
-									<td width="168">
-										<table width="100%" cellspacing="0" cellpadding="0" border="0">
-											<tr>
-												<td align="center">
-													<img width="88" height="88"  src="img/leading2.png" alt="Фото ведущего Илья Раменский" title="Фото ведущего Илья Раменский" />
 												</td>
 											</tr>
-											<tr>
-												<td>
-													<p class="base" style="text-align: center;"><b>Илья Раменский</b></br>
-														Team Lead в Lizard Software
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-									<td width="168">
-										<table width="100%" cellspacing="0" cellpadding="0" border="0">
-											<tr>
-												<td align="center">
-													<img width="88" height="88" src="img/leading3.png" alt="Фото ведущего Игнатий Чубаров" title="Фото ведущего Игнатий Чубаров" />
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="base" style="text-align: center;"><b>Игнатий Чубаров</b></br>
-														Преподаватель ITв РУИТ
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</table>
+						</tr>
+					</table>
+				</td>
+				<td width="168">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center">
+								<img width="88" height="88" src="img/leading2.png" alt="Фото ведущего Илья Раменский" title="Фото ведущего Илья Раменский" />
 							</td>
 						</tr>
-
 						<tr>
-							<td style="padding-bottom: 48px;">
-								<p class="base">Пока вы ждёте начала курса, вам могут быть интересны вебинары на разные темы, которые проходят на платформе ежедневно.</p>
+							<td>
+								<p class="base" style="text-align: center;"><b>Илья Раменский</b></br>
+									Team Lead в Lizard Software
+								</p>
 							</td>
 						</tr>
 					</table>
 				</td>
-			</tr>
+				<td width="168">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td align="center">
+								<img width="88" height="88" src="img/leading3.png" alt="Фото ведущего Игнатий Чубаров" title="Фото ведущего Игнатий Чубаров" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="base" style="text-align: center;"><b>Игнатий Чубаров</b></br>
+									Преподаватель ITв РУИТ
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+		</table>
+		</td>
+		</tr>
+
+		<tr>
+			<td style="padding-bottom: 48px;">
+				<p class="base">Пока вы ждёте начала курса, вам могут быть интересны вебинары на разные темы, которые проходят на платформе ежедневно.</p>
+			</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
 		</table>
 
 		<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -443,12 +442,13 @@
 						</tr>
 						<tr>
 							<td align="center">
-								<a class="base white" href="https://htmlacademy.ru/" terget="_blank" title="Переход на главную страницу мероприятий" style="background-color:#FF4B33; border-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-radius: 5px;">Все мероприятия</a>
+								<a class="base white" href="https://htmlacademy.ru/" terget="_blank" title="Переход на главную страницу мероприятий"
+									style="background-color:#FF4B33; border-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-radius: 5px;">Все мероприятия</a>
 							</td>
 						</tr>
 						<tr>
 							<td align="center">
-								<img width="273.4" height="290" src="img/сroods-keeping-in-touch.png" alt="Фото онлайн вебинар" title="Фото онлайн вебинар"/>
+								<img width="273.4" height="290" src="img/сroods-keeping-in-touch.png" alt="Фото онлайн вебинар" title="Фото онлайн вебинар" />
 							</td>
 						</tr>
 
@@ -490,19 +490,19 @@
 										<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
 											<a href="https://www.facebook.com/" target="_blank" title="Перейти на страницу в Фейсбуке"
 												style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-												<img src="img/icon-fb.png" alt="Иконка" width="24" heigth="24" title="Иконка"/>
+												<img src="img/icon-fb.png" alt="Иконка" width="24" heigth="24" title="Иконка" />
 											</a>
 										</td>
 										<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
 											<a href="https://www.instagram.com/" target="_blank" title="Перейти на страницу в Инстаграм"
 												style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-												<img src="img/icon-inst.png" alt="Иконка" width="24" heigth="24" title="Иконка"/>
+												<img src="img/icon-inst.png" alt="Иконка" width="24" heigth="24" title="Иконка" />
 											</a>
 										</td>
 										<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
 											<a href="https://www.youtube.com/" target="_blank" title="Перейти на страницу в Ютубе"
 												style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-												<img src="img/icon-youtube.png" alt="Иконка" width="24" heigth="24" title="Иконка"/>
+												<img src="img/icon-youtube.png" alt="Иконка" width="24" heigth="24" title="Иконка" />
 											</a>
 										</td>
 										<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
@@ -514,7 +514,7 @@
 										<td width="24">
 											<a href="https://vk.com/" target="_blank" title="Перейти на страницу ВКонтакте"
 												style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-												<img src="img/icon-vk.png" alt="Иконка" width="24" heigth="24" title="Иконка"/>
+												<img src="img/icon-vk.png" alt="Иконка" width="24" heigth="24" title="Иконка" />
 											</a>
 										</td>
 									</tr>
@@ -587,16 +587,12 @@
 			style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0px;width: 570px;font-family: 'trebuchet ms', tahoma, sans-serif;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
 			<tr>
 				<td>
-					<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
+					<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly; font-size: 11px; color: #828282;">
 						Вы получили это письмо, так как являетесь пользователем портала HTMLPlay.
 						Рассылка производится в соответствии с пользовательским соглашением.
-						Если вы не хотите получать рассылку, вы можете отписаться или настроить параметры.
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">Если письмо отображается некорректно или вы хотите
+						Если вы не хотите получать рассылку, вы можете отписаться или настроить параметры.</p>
+					</br>
+					<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly; font-size: 11px; color: #828282;">Если письмо отображается некорректно или вы хотите
 						им поделиться, <a href="https://htmlacademy.ru/" target="_blank" title="Поделиться письмом"
 							style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">жмите сюда</a>. </p>
 				</td>
