@@ -132,12 +132,11 @@
 		}
 
 		.table-600 {
-			widht: 600px;
+			width: 600px;
 			background-color: #FFFFFF;
 		}
 
-		.table-600__blue {
-			widht: 600px;
+		.table-blue {
 			background-color: #0B379B;
 		}
 
@@ -182,7 +181,7 @@
 			line-height: 35px;
 		}
 
-		.pd-32 {
+		.pd32 {
 			padding-right: 32px;
 			padding-left: 32px;
 		}
@@ -226,17 +225,30 @@
 			text-decoration: none;
 			-ms-interpolation-mode: bicubic;
 		}
+
+		@media only screen and (max-width:600px) {
+			*[class="gmail-fix"] {
+				display: none !important;
+			}
+
+			.button-border {
+				display: block !important;
+			}
+
+			a {
+				text-decoration: none !important;
+			}
+			/*	Header   */
+
+			/*	Header   */
+		}
 	</style>
 </head>
-<!-- table[class="table-100" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style=""]>tbody>tr>td -->
-
-<!-- table[class="table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style=""]>tbody>tr>td -->
-
 <!--
+table.table-100[align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style=""]>tbody>tr>td>table.table-600[align="center" cellpadding="0" cellspacing="0" border="0" width="600" style=""]>tbody>tr>td
+table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;"]>trbody>tr>td
 
-table[class="table-100" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style=""]>tbody>tr>td>table[class="table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style=""]>tr>td
-
- -->
+-->
 
 <body style="width: 100%; padding: 0; Margin: 0;">
 	<div style="background-color: green;">
@@ -251,434 +263,431 @@ table[class="table-100" align="center" width="100%" cellpadding="0" cellspacing=
 			<tbody>
 				<tr>
 					<td>
-						<!-- Header -->
 
-						<table class="table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="">
+
+
+						<table class="table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;">
 							<tbody>
 								<tr>
-									<td align="center" style="padding-top: 56px; padding-bottom: 48px;">
-										<a href="https://htmlacademy.ru/" target="_blank" title="Переход на сайт">
-											<img width="187" height="32" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/logo.png" alt="Лого Play HTML" title="Лого Play HTML" style="max-width:187px; width: 100%;" />
-										</a>
+									<td align="center">
+										<!-- Header -->
+										<table class="pd32 table-100 white" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;">
+											<trbody>
+												<tr>
+													<td align="center" style="padding-top: 56px; padding-bottom: 48px;">
+														<a href="https://htmlacademy.ru/" target="_blank" title="Переход на сайт">
+															<img width="187" height="32" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/logo.png" alt="Лого Play HTML" title="Лого Play HTML" style="" />
+														</a>
+													</td>
+												</tr>
+											</trbody>
+										</table>
+										<!-- Меню -->
+										<table class="pd32 table-100 white" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;">
+											<trbody>
+												<tr>
+													<td>
+														<a class="base-menu menu red" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с курсами"><b>Курсы</b></a>
+													</td>
+													<td>
+														<a class="base menu d-blue" href="https://htmlacademy.ru/vebinar/about" terget="_blank" title="Переход на страницу с вебинарами"><b>Вебинар</b></a>
+													</td>
+													<td>
+														<a class="base menu lg-blue" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу все о школе"><b>О школе</b></a>
+													</td>
+													<td>
+														<a class="base menu yellow" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с распродажей"><b>Распродажа</b></a>
+													</td>
+												</tr>
+											</trbody>
+										</table>
+										<!-- End Header -->
+
+										<!-- Конец Текст и фото - синий фон -->
+										<table class="table-100 table-blue pd32" bgcolor="#0B379B" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+											<tbody>
+												<tr>
+													<td>
+														<!--[if mso]><table style="width:600px" cellpadding="0"
+																	cellspacing="0"><tr><td style="width:339px" valign="top"><![endif]-->
+														<table align="left" class="float-left" width="339" cellspacing="0" cellpadding="0" border="0" style="widht: 339px; padding-top: 32px;">
+															<tr>
+																<td style="padding-bottom: 26px;">
+																	<p class="lg-blue" style="font-size: 16px;mso-line-height-rule: exactly;line-height: 150%;line-height: 19px;">Здравствуйте, {{name}}</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<p class="base" style="color:#FFFFFF;">
+																		Благодарим вас за регистрацию на курс «Начальный html+css».</br>
+																		</br>
+																		Курс стартует 1 июля в 17.00 по московскому времени.
+																		Письма со ссылками для входа в кабинет придут на
+																		указанную почту за день до старта курса.
+																	</p>
+																</td>
+															</tr>
+														</table>
+														<!--[if mso]></td><td style="width:0px"></td><td style="width:175px" valign="top"><![endif]-->
+														<table class="float-right" width="207" cellpadding="0" cellspacing="0" border="0" style="Margin: 0;padding:0;width: 175px;">
+															<tr>
+																<td>
+																	<img width="175" height="269" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/croods-standing.png" alt="Фото человек стоит с ноутбуком" title="Фото человек стоит с ноутбуком"
+																		style="max-width:175px; width: 100%;" />
+																</td>
+															</tr>
+														</table>
+
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- Конец Текст и фото - синий фон -->
+
+										<!-- Info block 2 -->
+										<table class="pd32 table-100" bgcolor="#FFFFFF" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+											<tbody>
+												<tr>
+													<td style="padding-top: 48px; padding-bottom: 24px;">
+														<h1 class="red" style="text-align: center;"><b>Что вас ждет на курсе</b></h1>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding-bottom: 48px;">
+														<p class="base">
+															Вы будете изучать теорию и методику на примере учебного проекта, который разработали наши эксперты. А применить полученные знания на практике вы сможете, выполняя задания по личному проекту.</br>
+															</br>
+															В этом вам будет помогать наставник - опытный специалист, который проверит домашние задания и поделится секретами мастерства. А если у вас останутся вопросы, наставник сможет ответить на них на консультации.</br>
+															</br>
+															После завершения курса вам нужно будет подготовить свой проект к защите — убедиться, что он реализован в соответствии с техническим заданием.</br>
+															</br>
+															Желаем вам продуктивной работы на интенсиве и успешной защиты. У вас всё получится, мы в вас верим!
+														</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- Info block 2 -->
+
+										<!-- Info block 3 -->
+										<table class="table-100 pd32" bgcolor="#FFFFFF" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+											<tbody>
+												<tr>
+													<td style="padding-bottom: 24px;">
+														<h2 align="center" class="lg-blue"><b>Ведущие курса</b></h2>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding-bottom: 48px;">
+														<table class="table-100" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+															<td width="168">
+																<table class="table-100" width="100%" cellpadding="0" cellspacing="0" border="0">
+																	<tr>
+																		<td align="center">
+																			<img width="88" height="88" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/leading1.png" alt="Фото ведущего Антон Громов" title="Фото ведущего Антон Громов"
+																				style="max-width:88px; width: 100%;" />
+																		</td>
+																		<tr>
+																			<td>
+																				<p class="base" style="text-align: center;"><b>Антон Громов</b></br>
+																					Фронтенд-разработчик в Cats Development</p>
+
+																			</td>
+																		</tr>
+																	</tr>
+															</table>
+															</td>
+
+															<td width="168">
+																<table class="table-100" width="100%" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center">
+																			<img width="88" height="88" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/leading2.png" alt="Фото ведущего Илья Раменский" title="Фото ведущего Илья Раменский"
+																				style="max-width:88px; width: 100%;" />
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p class="base" style="text-align: center;"><b>Илья Раменский</b></br>
+																				Team Lead в Lizard Software
+																			</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+
+															<td width="168">
+																<table class="table-100" width="100%" cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																		<td align="center">
+																			<img width="88" height="88" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/leading3.png" alt="Фото ведущего Игнатий Чубаров" title="Фото ведущего Игнатий Чубаров"
+																				style="max-width:88px; width: 100%;" />
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p class="base" style="text-align: center;"><b>Игнатий Чубаров</b></br>
+																				Преподаватель ITв РУИТ
+																			</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+													</table>
+												</td>
+										</tr>
+										<tr>
+											<td style="padding-bottom: 48px;">
+												<p class="base">Пока вы ждёте начала курса, вам могут быть интересны вебинары на разные темы, которые проходят на платформе ежедневно.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+						<!-- Info block 3 -->
+
+						<!-- Other party -->
+						<table class="pd16 table-100" bgcolor="#FFFFFF" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+							<tbody>
+								<tr>
+									<td style="padding-bottom: 24px;">
+										<h3 class="d-blue h-base"><b>Другие мероприятия</b></h3>
 									</td>
 								</tr>
-							</tbody>
-						</table>
-
-						<table class="table-600 pd-32" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="padding-bottom: 26px;">
-							<tbody>
 								<tr>
-									<td>
-										<a class="base-menu menu red" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с курсами"><b>Курсы</b></a>
-									</td>
-									<td>
-										<a class="base menu d-blue" href="https://htmlacademy.ru/vebinar/about" terget="_blank" title="Переход на страницу с вебинарами"><b>Вебинар</b></a>
-									</td>
-									<td>
-										<a class="base menu lg-blue" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу все о школе"><b>О школе</b></a>
-									</td>
-									<td>
-										<a class="base menu yellow" href="https://htmlacademy.ru/" terget="_blank" title="Переход на страницу с распродажей"><b>Распродажа</b></a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<!-- Header -->
-
-						<!-- Info block -->
-						<table class="pd-32 table-600__blue" bgcolor="#0B379B" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="">
-							<tbody>
-								<tr>
-									<td>
-										<!--[if mso]><table style="width:600px" cellpadding="0"
-													cellspacing="0"><tr><td style="width:393px" valign="top"><![endif]-->
-										<table align="left" class="float-left" width="339" cellspacing="0" cellpadding="0" border="0" style="widht: 339px; padding-top: 32px;">
+									<td style="padding-bottom: 16px;">
+										<table class="pd16" width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #02BAD3; box-sizing: border-box; border-radius: 15px;padding-top: 24px; padding-bottom: 24px;">
 											<tr>
-												<td style="padding-bottom: 26px;">
-													<p class="lg-blue" style="font-size: 16px;mso-line-height-rule: exactly;line-height: 150%;line-height: 19px;">Здравствуйте, {{name}}</p>
+												<td style="padding-bottom: 8px;">
+													<h3 class="title-h3">Тренды frontend-разработки</h3>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding-bottom: 18px;">
+													<b class="post-title-text">20 июня, 17:00</b>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<p class="base" style="color:#FFFFFF;">
-														Благодарим вас за регистрацию на курс «Начальный html+css».</br>
-														</br>
-														Курс стартует 1 июля в 17.00 по московскому времени.
-														Письма со ссылками для входа в кабинет придут на
-														указанную почту за день до старта курса.
+													<p class="post-title-text2">
+														Самые многообещающие направления развития фронтендав 2020 году
 													</p>
 												</td>
 											</tr>
 										</table>
-										<!--[if mso]></td><td style="width:0px"></td><td style="width:175px" valign="top"><![endif]-->
-										<table class="float-right" width="207" cellpadding="0" cellspacing="0" border="0" style="Margin: 0;padding:0;width: 175px;">
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom: 16px;">
+										<table class="pd16" width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #02BAD3; box-sizing: border-box; border-radius: 15px; padding-top: 24px; padding-bottom: 24px;">
+											<tr>
+												<td style="padding-bottom: 8px;">
+													<h3 class="title-h3">Figma vs Photoshop</h3>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding-bottom: 18px;">
+													<b class="post-title-text">21 июня, 17:00</b>
+												</td>
+											</tr>
 											<tr>
 												<td>
-													<img width="175" height="269" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/croods-standing.png" alt="Фото человек стоит с ноутбуком" title="Фото человек стоит с ноутбуком"
-														style="max-width:175px; width: 100%;" />
+													<p class="post-title-text2">
+														Почему давно пора отказаться от последнего?
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom: 40px;">
+										<table class="pd16" width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #02BAD3; box-sizing: border-box; border-radius: 15px;padding-top: 24px; padding-bottom: 24px;">
+											<tr>
+												<td style="padding-bottom: 8px;">
+													<h3 class="title-h3">Что такое Git и как его использовать?</h3>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding-bottom: 18px;">
+													<b class="post-title-text">22 июня, 17:00</b>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p class="post-title-text2">
+														Разберем тонкости использования самой популярной системы контроля версий.
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<a class="base white" href="https://htmlacademy.ru/" terget="_blank" title="Переход на главную страницу мероприятий"
+											style="display: inline-block; background-color:#FF4B33; border-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-radius: 5px;">Все мероприятия</a>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<img width="273.4" height="290" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/%D1%81roods-keeping-in-touch.png" alt="Фото онлайн вебинар" title="Фото онлайн вебинар" style="max-width:273.4px; width: 100%;" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- Other party -->
+
+						<!-- Footer -->
+						<table class="pd32 table-100" bgcolor="#FFFFFF" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
+							<tbody>
+								<tr>
+									<td align="left" style="padding-top: 8px; padding-bottom: 32px;">
+										<!--[if mso]><table style="width:600px" cellpadding="0"
+														cellspacing="0"><tr><td style="width:268px" valign="top"><![endif]-->
+										<table width="268px" align="left" cellspacing="0" cellpadding="0" border="0"
+											style="width:268px;">
+											<tr>
+												<td align="left" style="Margin: 0; padding: 0; padding-bottom: 16px;">
+													<h3 class="footer" style=""><b>Мы в социальных сетях</b></h3>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="Margin: 0; padding: 0; padding-bottom: 24px;">
+													<table align="left" cellspacing="0" cellpadding="0" border="0" style="">
+														<tr>
+															<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
+																<a href="https://www.facebook.com/" target="_blank" title="Перейти на страницу в Фейсбуке"
+																	style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
+																	<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-fb.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
+																</a>
+															</td>
+															<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
+																<a href="https://www.instagram.com/" target="_blank" title="Перейти на страницу в Инстаграм"
+																	style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
+																	<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-inst.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
+																</a>
+															</td>
+															<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
+																<a href="https://www.youtube.com/" target="_blank" title="Перейти на страницу в Ютубе"
+																	style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
+																	<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-youtube.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
+																</a>
+															</td>
+															<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
+																<a href="https://web.telegram.org/" target="_blank" title="Перейти на канал в Телеграме"
+																	style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
+																	<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-telegram.png" alt="Иконка" width="24" heigth="24" style="max-width:24px; width: 100%;" />
+																</a>
+															</td>
+															<td width="24">
+																<a href="https://vk.com/" target="_blank" title="Перейти на страницу ВКонтакте"
+																	style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
+																	<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-vk.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="Margin: 0; padding: 0; padding-bottom: 8px;">
+													<h3 class="footer" style=""><b>Свяжитесь с нами</b></h3>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="Margin: 0; padding: 0; padding-bottom: 8px;">
+													<a class="footer__blue" href="mailto:mailto:study@htmlacademy.ru" target="_blank" title="Написать на почту"
+														style="">study@htmlplay.com</a>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="Margin: 0; padding: 0;">
+													<a class="footer__blue" href="tel:88006907668" target="_blank" title="Набрать номер 8-800-690-76-68"
+														style="">8-800-690-76-68</a>
 												</td>
 											</tr>
 										</table>
 
+										<!--[if mso]></td><td style="width:0px"></td><td style="width:268px" valign="top"><![endif]-->
+										<table width="268" align="left" cellspacing="0" cellpadding="0" border="0" style="width: 268px;float: right;">
+											<tr>
+												<td align="left" style="Margin: 0; padding: 0; padding-bottom: 16px;">
+													<h3 class="footer"><b>Полезные ссылки</b></h3>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<ul style="Margin: 0; padding: 0;">
+														<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
+															<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Просмотр бесплатных вебинаров"
+																style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: underline;">Бесплатные
+																вебинары</a>
+														</li>
+														<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
+															<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Список курсов для обучения"
+																style="Margin: 0;padding: 0;text-decoration: underline;">Обучающие курсы</a>
+														</li>
+														<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
+															<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Ссылка с тестами"
+																style="Margin: 0;padding: 0;text-decoration: underline;">Тесты</a>
+														</li>
+														<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
+															<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Полезные статьи, ежедневный обзор"
+																style="Margin: 0;padding: 0;text-decoration: underline;">Наш
+																блог</a>
+														</li>
+														<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
+															<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Истории наших студентов"
+																style="Margin: 0;padding: 0;text-decoration: underline;">Истории
+																студентов</a>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-						<!-- Info block -->
+						<!-- Footer -->
 
-						<!-- Info block 2 -->
-						<table class="pd-32 table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="">
+						<!-- Line -->
+						<table class="table-100%" bgcolor="#FFFFFF" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="padding-right: 21px;padding-left: 21px;">
 							<tbody>
 								<tr>
-									<td style="padding-top: 48px; padding-bottom: 24px;">
-										<h1 class="red" style="text-align: center;"><b>Что вас ждет на курсе</b></h1>
-									</td>
-								</tr>
-								<tr>
-									<td style="padding-bottom: 48px;">
-										<p class="base">
-											Вы будете изучать теорию и методику на примере учебного проекта, который разработали наши эксперты. А применить полученные знания на практике вы сможете, выполняя задания по личному проекту.</br>
-											</br>
-											В этом вам будет помогать наставник - опытный специалист, который проверит домашние задания и поделится секретами мастерства. А если у вас останутся вопросы, наставник сможет ответить на них на консультации.</br>
-											</br>
-											После завершения курса вам нужно будет подготовить свой проект к защите — убедиться, что он реализован в соответствии с техническим заданием.</br>
-											</br>
-											Желаем вам продуктивной работы на интенсиве и успешной защиты. У вас всё получится, мы в вас верим!
-										</p>
+									<td width="563" class="pd16" style="width: 563px;height: 1px; background-color:#E0E0E0;">
 									</td>
 								</tr>
 							</tbody>
 						</table>
-						<!-- Info block 2 -->
+						<!-- Line -->
 
-						<!-- Info block 3 -->
-						<table class="table-600 pd-32" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="">
+						<!-- -->
+						<table class="table-600 pd32" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="padding-top: 32px;padding-bottom: 32px;">
 							<tbody>
 								<tr>
-									<td style="padding-bottom: 24px;">
-										<h2 align="center" class="lg-blue"><b>Ведущие курса</b></h2>
+									<td>
+										<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly; font-size: 11px; color: #828282;">
+											Вы получили это письмо, так как являетесь пользователем портала HTMLPlay.
+											Рассылка производится в соответствии с пользовательским соглашением.
+											Если вы не хотите получать рассылку, вы можете отписаться или настроить параметры.</p>
+										</br>
+										<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly; font-size: 11px; color: #828282;">Если письмо отображается
+											некорректно или вы хотите
+											им поделиться, <a href="https://htmlacademy.ru/" target="_blank" title="Поделиться письмом"
+												style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">жмите сюда</a>. </p>
 									</td>
 								</tr>
-								<tr>
-									<td style="padding-bottom: 48px;">
-										<table class="table-600" width="100%" cellpadding="0" cellspacing="0" border="0" style="">
-											<td width="168">
-												<table class="table-1" width="100%" cellpadding="0" cellspacing="0" border="0">
-													<tr>
-														<td align="center">
-															<img width="88" height="88" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/leading1.png" alt="Фото ведущего Антон Громов" title="Фото ведущего Антон Громов"
-																style="max-width:88px; width: 100%;" />
-														</td>
-														<tr>
-															<td>
-																<p class="base" style="text-align: center;"><b>Антон Громов</b></br>
-																	Фронтенд-разработчик в Cats Development</p>
-
-															</td>
-														</tr>
-													</tr>
-											</table>
-											</td>
-
-											<td width="168">
-												<table width="100%" cellspacing="0" cellpadding="0" border="0">
-													<tr>
-														<td align="center">
-															<img width="88" height="88" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/leading2.png" alt="Фото ведущего Илья Раменский" title="Фото ведущего Илья Раменский"
-																style="max-width:88px; width: 100%;" />
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p class="base" style="text-align: center;"><b>Илья Раменский</b></br>
-																Team Lead в Lizard Software
-															</p>
-														</td>
-													</tr>
-												</table>
-											</td>
-
-											<td width="168">
-												<table width="100%" cellspacing="0" cellpadding="0" border="0">
-													<tr>
-														<td align="center">
-															<img width="88" height="88" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/leading3.png" alt="Фото ведущего Игнатий Чубаров" title="Фото ведущего Игнатий Чубаров"
-																style="max-width:88px; width: 100%;" />
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p class="base" style="text-align: center;"><b>Игнатий Чубаров</b></br>
-																Преподаватель ITв РУИТ
-															</p>
-														</td>
-													</tr>
-												</table>
-											</td>
-									</table>
-								</td>
-						</tr>
-						<tr>
-							<td style="padding-bottom: 48px;">
-								<p class="base">Пока вы ждёте начала курса, вам могут быть интересны вебинары на разные темы, которые проходят на платформе ежедневно.</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-		<!-- Info block 3 -->
-
-		<!-- Other party -->
-		<table class="pd16 table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="">
-			<tbody>
-
-				<tr>
-					<td style="padding-bottom: 24px;">
-						<h3 class="d-blue h-base"><b>Другие мероприятия</b></h3>
-					</td>
-				</tr>
-
-				<tr>
-					<td style="padding-bottom: 16px;">
-						<table class="pd16" width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #02BAD3; box-sizing: border-box; border-radius: 15px;padding-top: 24px; padding-bottom: 24px;">
-							<tr>
-								<td style="padding-bottom: 8px;">
-									<h3 class="title-h3">Тренды frontend-разработки</h3>
-								</td>
-							</tr>
-							<tr>
-								<td style="padding-bottom: 18px;">
-									<b class="post-title-text">20 июня, 17:00</b>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="post-title-text2">
-										Самые многообещающие направления развития фронтендав 2020 году
-									</p>
-								</td>
-							</tr>
+							</tbody>
 						</table>
-					</td>
-				</tr>
+						<!-- -->
 
-				<tr>
-					<td style="padding-bottom: 16px;">
-						<table class="pd16" width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #02BAD3; box-sizing: border-box; border-radius: 15px; padding-top: 24px; padding-bottom: 24px;">
-							<tr>
-								<td style="padding-bottom: 8px;">
-									<h3 class="title-h3">Figma vs Photoshop</h3>
-								</td>
-							</tr>
-							<tr>
-								<td style="padding-bottom: 18px;">
-									<b class="post-title-text">21 июня, 17:00</b>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="post-title-text2">
-										Почему давно пора отказаться от последнего?
-									</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-
-				<tr>
-					<td style="padding-bottom: 40px;">
-						<table class="pd16" width="100%" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #02BAD3; box-sizing: border-box; border-radius: 15px;padding-top: 24px; padding-bottom: 24px;">
-							<tr>
-								<td style="padding-bottom: 8px;">
-									<h3 class="title-h3">Что такое Git и как его использовать?</h3>
-								</td>
-							</tr>
-							<tr>
-								<td style="padding-bottom: 18px;">
-									<b class="post-title-text">22 июня, 17:00</b>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="post-title-text2">
-										Разберем тонкости использования самой популярной системы контроля версий.
-									</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-
-				<tr>
-					<td align="center">
-						<a class="base white" href="https://htmlacademy.ru/" terget="_blank" title="Переход на главную страницу мероприятий"
-							style="display: inline-block; background-color:#FF4B33; border-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-radius: 5px;">Все мероприятия</a>
-					</td>
-				</tr>
-
-				<tr>
-					<td align="center">
-						<img width="273.4" height="290" src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/%D1%81roods-keeping-in-touch.png" alt="Фото онлайн вебинар" title="Фото онлайн вебинар" style="max-width:273.4px; width: 100%;" />
-					</td>
-				</tr>
-
-
-			</tbody>
-		</table>
-
-		<!-- Other party -->
-
-		<!-- Footer -->
-		<table class="pd-32 table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="">
-			<tbody>
-				<tr>
-					<td align="left" style="padding-top: 8px; padding-bottom: 32px;">
-						<!--[if mso]><table style="width:600px" cellpadding="0"
-										cellspacing="0"><tr><td style="width:268px" valign="top"><![endif]-->
-						<table width="268px" align="left" cellspacing="0" cellpadding="0" border="0"
-							style="width:268px;">
-							<tr>
-								<td align="left" style="Margin: 0; padding: 0; padding-bottom: 16px;">
-									<h3 class="footer" style=""><b>Мы в социальных сетях</b></h3>
-								</td>
-							</tr>
-							<tr>
-								<td align="left" style="Margin: 0; padding: 0; padding-bottom: 24px;">
-									<table align="left" cellspacing="0" cellpadding="0" border="0" style="">
-										<tr>
-											<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
-												<a href="https://www.facebook.com/" target="_blank" title="Перейти на страницу в Фейсбуке"
-													style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-													<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-fb.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
-												</a>
-											</td>
-											<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
-												<a href="https://www.instagram.com/" target="_blank" title="Перейти на страницу в Инстаграм"
-													style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-													<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-inst.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
-												</a>
-											</td>
-											<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
-												<a href="https://www.youtube.com/" target="_blank" title="Перейти на страницу в Ютубе"
-													style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-													<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-youtube.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
-												</a>
-											</td>
-											<td width="24" style="Margin:0; padding:0; padding-right: 8px;">
-												<a href="https://web.telegram.org/" target="_blank" title="Перейти на канал в Телеграме"
-													style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-													<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-telegram.png" alt="Иконка" width="24" heigth="24" style="max-width:24px; width: 100%;" />
-												</a>
-											</td>
-											<td width="24">
-												<a href="https://vk.com/" target="_blank" title="Перейти на страницу ВКонтакте"
-													style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-													<img src="https://raw.githubusercontent.com/Walvorin/1077679-play-html-1/module3-task1/2-welcome/img/icon-vk.png" alt="Иконка" width="24" heigth="24" title="Иконка" style="max-width:24px; width: 100%;" />
-												</a>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td align="left" style="Margin: 0; padding: 0; padding-bottom: 8px;">
-									<h3 class="footer" style=""><b>Свяжитесь с нами</b></h3>
-								</td>
-							</tr>
-							<tr>
-								<td align="left" style="Margin: 0; padding: 0; padding-bottom: 8px;">
-									<a class="footer__blue" href="mailto:mailto:study@htmlacademy.ru" target="_blank" title="Написать на почту"
-										style="">study@htmlplay.com</a>
-								</td>
-							</tr>
-							<tr>
-								<td align="left" style="Margin: 0; padding: 0;">
-									<a class="footer__blue" href="tel:88006907668" target="_blank" title="Набрать номер 8-800-690-76-68"
-										style="">8-800-690-76-68</a>
-								</td>
-							</tr>
-						</table>
-
-						<!--[if mso]></td><td style="width:0px"></td><td style="width:268px" valign="top"><![endif]-->
-						<table width="268" align="left" cellspacing="0" cellpadding="0" border="0" style="width: 268px;float: right;">
-							<tr>
-								<td align="left" style="Margin: 0; padding: 0; padding-bottom: 16px;">
-									<h3 class="footer"><b>Полезные ссылки</b></h3>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<ul style="Margin: 0; padding: 0;">
-										<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-											<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Просмотр бесплатных вебинаров"
-												style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: underline;">Бесплатные
-												вебинары</a>
-										</li>
-										<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-											<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Список курсов для обучения"
-												style="Margin: 0;padding: 0;text-decoration: underline;">Обучающие курсы</a>
-										</li>
-										<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-											<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Ссылка с тестами"
-												style="Margin: 0;padding: 0;text-decoration: underline;">Тесты</a>
-										</li>
-										<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-											<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Полезные статьи, ежедневный обзор"
-												style="Margin: 0;padding: 0;text-decoration: underline;">Наш
-												блог</a>
-										</li>
-										<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-											<a class="footer" href="https://htmlacademy.ru/" target="_blank" title="Истории наших студентов"
-												style="Margin: 0;padding: 0;text-decoration: underline;">Истории
-												студентов</a>
-										</li>
-									</ul>
-								</td>
-							</tr>
-						</table>
 					</td>
 				</tr>
 			</tbody>
 		</table>
-		<!-- Footer -->
-
-		<!-- Line -->
-		<table class="table-600" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="padding-right: 21px;padding-left: 21px;">
-			<tbody>
-				<tr>
-					<td width="568" class="pd16" style="width: 568px;height: 1px; background-color:#E0E0E0;">
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<!-- Line -->
-
-		<!-- -->
-		<table class="table-600 pd-32" bgcolor="#FFFFFF" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="padding-top: 32px;padding-bottom: 32px;">
-			<tbody>
-				<tr>
-					<td>
-						<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly; font-size: 11px; color: #828282;">
-							Вы получили это письмо, так как являетесь пользователем портала HTMLPlay.
-							Рассылка производится в соответствии с пользовательским соглашением.
-							Если вы не хотите получать рассылку, вы можете отписаться или настроить параметры.</p>
-						</br>
-						<p style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly; font-size: 11px; color: #828282;">Если письмо отображается
-							некорректно или вы хотите
-							им поделиться, <a href="https://htmlacademy.ru/" target="_blank" title="Поделиться письмом"
-								style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">жмите сюда</a>. </p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<!-- -->
-
-		</td>
-		</tr>
-		</tbody>
-		</table>
-		<!-- Обертка -->
-
+						<!-- Основная таблица -->
 	</div>
 </body>
 
