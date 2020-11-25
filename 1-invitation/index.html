@@ -214,14 +214,72 @@
 
 			/* block 1*/
 			.mob-width-t1 {
-				width: 256 !important;
+				width: 256px !important;
 				float: none !important;
-
 			}
+      .mob-width-t2 {
+				width: 256px !important;
+        float: none !important;
+			}
+      .mob-width-t2 .adaptive-img {
+        width: 256px !important;
+        height: 234px !important;
+      }
 			.mob-center {
 				text-align: center;
 			}
 			/* block 1*/
+
+      /*  Blue block  */
+      .m-blue-b {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+      }
+      .m-icon-b {
+        vertical-align: top !important;
+        padding-top: 5px !important;
+        padding-right: 19px !important;
+      }
+      /*  Blue block  */
+
+      /*  Button red  */
+      .m-button-red {
+        width: 174px !important;
+      }
+      /*  Button red  */
+
+      /*  Ведущий блок  */
+      .m-vedushii-b {
+        display: inline-block !important;
+        width: 250px !important;
+      }
+      .m-button-red2 {
+        width: 201px !important;
+      }
+      .m-vedushii-b--img {
+        padding-top: 0 !important;
+      }
+      .m-blue-text {
+        font-size: 24px !important;
+        line-height: 28px !important;
+        width: 255px;
+      }
+      /*  Ведущий блок  */
+
+      /*  Footer   */
+      .m-footer-t2 {
+        float: left !important;
+      }
+      .m-footer-link {
+        text-decoration: underline !important;
+      }
+      .m-footer-2 {
+        padding-top: 48px !important;
+      }
+      .m-footer2-link {
+        text-decoration: underline !important;
+        color: #828282;
+      }
 		}
 	</style>
 </head>
@@ -273,7 +331,7 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 
 										<!-- Inner text -->
 										<table class="table-100 white" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;">
-											<trbody>
+											<tbody>
 												<tr>
 													<td style="">
 														<h1 class="mob-h1" class="base-font" style="">
@@ -288,19 +346,19 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 														</a>
 													</td>
 												</tr>
-											</trbody>
+											</tbody>
 										</table>
 										<!-- End Inner text -->
 
 										<!-- Text width img -->
-										<table class="table-100 white mob-tab-b2" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;  padding-top: 24px;Madding-bottom: 32px;">
+										<table class="table-100 white mob-tab-b2" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;  padding-top: 24px;Margin-bottom: 32px;">
 											<tbody>
 												<tr>
 													<td class="mob-center" align="center" style="Margin: 0; padding: 0; padding-left: 8px;">
 														<!-- Block text -->
 														<!--[if mso]><table style="width:600px" cellpadding="0" cellspacing="0"><tr><td style="width:256px" valign="top"><![endif]-->
 														<table class="mob-width-t1" bgcolor="FF4B33" width="200" align="center" cellspacing="0" cellpadding="0" border="0"
-															style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0px;width: 200px; max-width: 256px;float: left;border-radius: 5px;padding-top: 16px;">
+															style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0px;width: 200px;float: left;border-radius: 5px;padding-top: 16px;">
 															<tr>
 																<td align="center">
 																	<span
@@ -333,7 +391,7 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 
 														<!-- Block img -->
 														<!--[if mso]></td><td style="width:0px"></td><td style="width:352px" valign="top"><![endif]-->
-														<table width="352" align="center" cellspacing="0" cellpadding="0" border="0"
+														<table class="mob-width-t2" width="352" align="center" cellspacing="0" cellpadding="0" border="0"
 															style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0px;width: 352px;float: right;font-family: 'trebuchet ms', tahoma, sans-serif;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
 															<tr>
 																<td>
@@ -349,7 +407,7 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 										<!-- End Text width img -->
 
 										<!-- Blue block -->
-										<table class="table-100 pd16"  align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #0B379B; padding-bottom: 32px;padding-top: 40px;">
+										<table class="table-100 pd16 m-blue-b"  align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #0B379B; padding-bottom: 32px;padding-top: 40px;">
 											<tbody>
 												<tr>
 													<td align="left" style="padding-bottom: 32px;">
@@ -373,31 +431,31 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 														<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0"
 															style="">
 															<tr>
-																<td align="center" valign="middle" style="padding-right: 13px;">
+																<td class="m-icon-b" align="center" valign="middle" style="padding-right: 13px;">
 																	<img class="adaptive-img" width="12" height="12" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//ellipse-ye.png" alt="Желтый круг" title="Желтый круг" style=""/>
 																</td>
 																<td style="Margin: 0; padding: 0; padding-bottom: 8px;">
-																	<p class="fw-400"
+																	<p class="fw-400 m-blue-text"
 																		style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;color: #FFFFFF;font-size: 18px;line-height: 21px;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
-																		Кто такой frontend-разработчик?</p>
+																		Кто такой frontend&nbspразработчик?</p>
 																</td>
 															</tr>
 															<tr>
-																<td align="center" valign="middle" style="padding-right: 13px;">
+																<td class="m-icon-b" align="center" valign="middle" style="padding-right: 13px;">
 																	<img class="adaptive-img" width="12" height="12" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//triangle-bl.png" alt="Треугольник синий" title="Треугольник синий" style=""/>
 																</td>
 																<td style="Margin: 0; padding: 0; padding-bottom: 8px;">
-																	<p class="fw-400"
+																	<p class="fw-400 m-blue-text"
 																		style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;color: #FFFFFF;font-size: 18px;line-height: 21px;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
 																		Какие навыки сейчас востребованы?</p>
 																</td>
 															</tr>
 															<tr>
-																<td align="center" valign="middle" style="padding-right: 13px;">
+																<td class="m-icon-b" align="center" valign="middle" style="padding-right: 13px;">
 																	<img class="adaptive-img" width="12" height="12" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//square-red.png" alt="Квадрат красный" title="Квадрат красный" style=""/>
 																</td>
 																<td style="Margin: 0; padding: 0; padding-bottom: 8px;">
-																	<p
+																	<p class="fw-400 m-blue-text"
 																		style="font-family: 'Trebuchet MS', sans-serif;Margin: 0;padding: 0;color: #FFFFFF;font-size: 18px;line-height: 21px;text-decoration: none;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;mso-line-height-rule: exactly;">
 																		Как устроиться в компанию после обучения?</p>
 																</td>
@@ -426,7 +484,7 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 												</tr>
 												<tr>
 													<td align="center">
-														<p style="color: #000000; font-size: 18px;mso-line-height-rule: exactly;line-height: 150%;line-height: 21px;">
+														<p class="m-vedushii-b" style="color: #000000; font-size: 18px;mso-line-height-rule: exactly;line-height: 150%;line-height: 21px;">
 															<b>Иван
 																Васильев</b></br>
 															Frontend-разработчик компании Cats
@@ -436,13 +494,13 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 												</tr>
 												<tr>
 													<td align="center" height="38" style="Margin:0; padding:0; padding-top: 24px;">
-														<a class="button-border style fw-400 button-red" href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Кнопка регистрации на вебинар"
-															style="">Зарегистрироваться на вебинар
+														<a class="button-border style fw-400 button-red m-button-red" href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Кнопка регистрации на вебинар"
+															style="">Зарегистрироваться на&nbsp;вебинар
 														</a>
 													</td>
 												</tr>
 												<tr>
-													<td align="center" style="Margin: 0; padding: 0; padding-top: 16px;">
+													<td class="m-vedushii-b--img" align="center" style="Margin: 0; padding: 0; padding-top: 16px;">
 														<a href="https://htmlacademy.ru/" target="_blank" title="Перейти на страницу розыгрыша призов">
 															<img class="adaptive-img" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//croods-proposal.png" alt="Розыгрыш призов среди участников" width="278" heigth="278" title="Розыгрыш призов среди участников" style=""/>
 														</a>
@@ -451,16 +509,15 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 
 												<tr>
 													<td align="center">
-														<p class="fw blue-text" style="">
-															<b>Среди участников вебинара
-															будут разыграны ценные призы!</b>
+														<p class="fw blue-text m-blue-text" style="">
+															<b>Среди участников вебинара&nbsp;будут разыграны&nbsp;ценные призы!</b>
 														</p>
 													</td>
 												</tr>
 
 												<tr>
 													<td align="center" style="Margin: 0; padding: 0; padding-top: 24px; padding-bottom: 24px; ">
-														<a class="button-border fw-400 button-red" href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Перейти для регистрации"
+														<a class="button-border fw-400 button-red m-button-red2" href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Перейти для регистрации"
 															style="">Зарегистрироваться</a>
 													</td>
 												</tr>
@@ -555,7 +612,7 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 
 														<!-- Second -->
 														<!--[if mso]></td><td style="width:0px"></td><td style="width:268px" valign="top"><![endif]-->
-														<table width="268" align="center" cellspacing="0" cellpadding="0" border="0" style="width: 268px;float: right;">
+														<table class="m-footer-t2" width="268" align="center" cellspacing="0" cellpadding="0" border="0" style="width: 268px;float: right;">
 															<tr>
 																<td align="left" style="Margin: 0; padding: 0; padding-bottom: 16px;">
 																	<h3 class="fw" style="color: #000000;font-size: 16px;mso-line-height-rule: exactly;line-height: 150%;line-height: 19px;">
@@ -567,30 +624,29 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 																<td>
 																	<ul style="Margin: 0; padding: 0;">
 																		<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-																			<a class="style black" href="https://htmlacademy.ru/" target="_blank" title="Просмотр бесплатных вебинаров"
+																			<a class="style black m-footer-link" href="https://htmlacademy.ru/" target="_blank" title="Просмотр бесплатных вебинаров"
 																				style="text-decoration: underline !important;font-size: 14px;mso-line-height-rule: exactly; line-height: 150%;line-height: 16px;">
 																				Бесплатные вебинары
 																			</a>
 																		</li>
 																		<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-																			<a class="style black" href="https://htmlacademy.ru/" target="_blank" title="Список курсов для обучения"
-																				style="font-size: 14px;mso-line-height-rule: exactly;line-height: 150%;line-height: 16px; text-decoration: underline;">Обучающие
-																				курсы</a>
+																			<a class="style black m-footer-link" href="https://htmlacademy.ru/" target="_blank" title="Список курсов для обучения"
+																				style="font-size: 14px;mso-line-height-rule: exactly;line-height: 150%;line-height: 16px; text-decoration: underline;">Обучающие курсы</a>
 																		</li>
 																		<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-																			<a class="style black" href="https://htmlacademy.ru/" target="_blank" title="Ссылка с тестами"
+																			<a class="style black m-footer-link" href="https://htmlacademy.ru/" target="_blank" title="Ссылка с тестами"
 																				style="text-decoration: underline !important;font-size: 14px;mso-line-height-rule: exactly; line-height: 150%;line-height: 16px;">
 																				Тесты
 																			</a>
 																		</li>
 																		<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-																			<a class="style black" href="https://htmlacademy.ru/" target="_blank" title="Полезные статьи, ежедневный обзор"
+																			<a class="style black m-footer-link" href="https://htmlacademy.ru/" target="_blank" title="Полезные статьи, ежедневный обзор"
 																				style="text-decoration: underline !important;font-size: 14px;mso-line-height-rule: exactly; line-height: 150%;line-height: 16px;">
 																				Наш блог
 																			</a>
 																		</li>
 																		<li style="list-style: none; Margin: 0; padding: 0; padding-bottom: 8px;">
-																			<a class="style black" href="https://htmlacademy.ru/" target="_blank" title="Истории наших студентов"
+																			<a class="style black m-footer-link" href="https://htmlacademy.ru/" target="_blank" title="Истории наших студентов"
 																				style="text-decoration: underline;font-size: 14px;mso-line-height-rule: exactly; line-height: 150%;line-height: 16px;">
 																				Истории студентов
 																			</a>
@@ -606,20 +662,20 @@ table.table-100.white[bgcolor="#FFFFFF" align="center" cellpadding="0" cellspaci
 										</table>
 										<!-- End Footer -->
 										<!-- Footer2 -->
-											<table class="table-100" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="">
+											<table class="" class="table-100" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="">
 												<tbody>
 													<tr>
-														<td class="pd16" style="padding-top: 56px;">
+														<td class="pd16 m-footer-2" style="padding-top: 56px;">
 															<p class="fw-400"
 																style="font-size: 11px;mso-line-height-rule: exactly;line-height: 150%;line-height: 13px; color: #828282; ">
 																Вы получили это письмо, так как являетесь пользователем портала HTMLPlay.
 																Рассылка производится в соответствии с пользовательским соглашением.
-																Если вы не хотите получать рассылку, вы можете отписаться или настроить параметры.
+																Если вы не хотите получать рассылку, вы можете <a class="m-footer2-link" href="https://htmlacademy.ru/" target="_blank" title="Отписаться">отписаться</a> или <a class="m-footer2-link" href="https://htmlacademy.ru/" target="_blank" title="Настроить параметры">настроить параметры</a>.
 															</p></br>
 
 															<p class="fw-400" style="font-size: 11px;mso-line-height-rule: exactly;line-height: 150%;line-height: 13px; color: #828282; ">Если письмо
 																отображается некорректно или вы хотите
-																им поделиться, <a href="https://htmlacademy.ru/" target="_blank" title="Поделиться письмом"
+																им поделиться, <a class="m-footer2-link" href="https://htmlacademy.ru/" target="_blank" title="Поделиться письмом"
 																	style="font-size: 11px;mso-line-height-rule: exactly;line-height: 150%;line-height: 13px;">жмите сюда</a>. </p>
 														</td>
 													</tr>
