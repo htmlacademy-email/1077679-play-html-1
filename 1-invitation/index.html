@@ -179,6 +179,10 @@
 			*[class="gmail-fix"] {
 				display: none !important;
 			}
+      .adaptive-img {
+        width: 100% !important;
+        height: auto !important
+      }
 
 			#outlook a {
 				padding: 0;
@@ -187,6 +191,16 @@
 				padding-left: 16 !important;
 				padding-right: 16 !important;
 			}
+      .m-no-mar {
+        margin-bottom: 0 !important;
+      }
+      .m-no-pdl {
+        padding-left: 0 !important;
+      }
+      .m-pd-lr-16 {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+      }
 
 			.button {
 				mso-style-priority: 100 !important;
@@ -212,6 +226,13 @@
 				line-height: 19px !important;
 			}
 
+      .m-blue-inner-text {
+        padding-top: 24px !important;
+      }
+      .m-pdt-3 {
+        padding-top: 3px !important;
+      }
+
 			.pd13 {
 				padding-left: 13px !important;
 				padding-right: 13px !important;
@@ -230,22 +251,9 @@
 				float: none !important;
 			}
 
-			.mob-width-t2 .adaptive-img {
-				width: 256px !important;
-				height: 234px !important;
-			}
-
-			.mob-center {
-				text-align: center;
-			}
-
 			/* block 1*/
 
 			/*  Blue block  */
-			.m-blue-b {
-				padding-top: 24px !important;
-				padding-bottom: 24px !important;
-			}
 
 			.m-icon-b {
 				vertical-align: top !important;
@@ -274,6 +282,7 @@
 
 			.m-vedushii-b--img {
 				padding-top: 0 !important;
+        padding-bottom: 0 !important;
 			}
 
 			.m-blue-text {
@@ -319,7 +328,6 @@
 						<tr>
 							<td class="pd16 pd13" style="">
 								<!-- web version -->
-
 											<table class="table-100" align="center" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
 												<tr>
 													<td style="padding-top: 24px;padding-bottom: 16px;">
@@ -375,16 +383,16 @@
 								<!-- End Inner text -->
 
 								<!-- Text width img -->
-								<table class="table-100 white mob-tab-b2" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;  padding-top: 24px;Margin-bottom: 32px;">
+								<table class="table-100 white m-no-mar m-pdt-3" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFFFF;  padding-top: 24px;Margin-bottom: 32px;">
 									<tr>
-										<td class="mob-center" align="center" style="Margin: 0; padding: 0; padding-left: 8px;">
+										<td class="m-no-pdl m-pd-lr-16" align="center" style="Margin: 0; padding: 0; padding-left: 8px;">
 											<table class="table-600" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tr>
 													<td align="left">
 														<!-- Block text -->
 														<!--[if mso]><table style="width:600px" cellpadding="0" cellspacing="0"><tr><td style="width:256px" valign="top"><![endif]-->
 														<table class="mob-width-t1" bgcolor="FF4B33" width="200" align="center" cellspacing="0" cellpadding="0" border="0"
-															style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0px;width: 200px;float: left;border-radius: 5px;padding-top: 16px;">
+															style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0px;float: left;border-radius: 5px;padding-top: 16px;">
 															<tr>
 																<td align="center">
 																	<span
@@ -436,12 +444,12 @@
 								<!-- End Text width img -->
 
 								<!-- Blue block -->
-								<table class="table-100 m-blue-b" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="">
+								<table class="table-100" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="">
 									<tr>
 										<td>
 											<table class="table-600 pd16" align="center" bgcolor="#0B379B" cellpadding="0" cellspacing="0" border="0" width="600" style="background-color: #0B379B;">
 												<tr>
-													<td align="left" style="padding-bottom: 32px;padding-top: 40px;">
+													<td class="m-blue-inner-text" align="left" style="padding-bottom: 32px;padding-top: 40px;">
 														<p class="fw-400" style="color: #FFFFFF;font-size: 18px;mso-line-height-rule: exactly; line-height: 150%;line-height: 21px;">
 															Мы расскажем все детали о том, с чего начать свой путь в разработке сайтов, и как вырасти в востребованного специалиста. Все вопросы Вы сможете задать спикеру на вебинаре :)
 														</p>
@@ -510,8 +518,8 @@
 													</td>
 												</tr>
 												<tr>
-													<td align="center" style="Margin: 0; padding; padding-top: 24px; ">
-														<img class="adaptive-img" width="88" height="88" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//portrait1.png" alt="Фото ведущего вебинара" title="Фото ведущего вебинара"
+													<td align="center" style="Margin: 0; padding; padding-top: 24px; padding-bottom: 12px; ">
+														<img width="88" height="88" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//portrait1.png" alt="Фото ведущего вебинара" title="Фото ведущего вебинара"
 															style="" />
 													</td>
 												</tr>
@@ -531,9 +539,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="m-vedushii-b--img" align="center" style="Margin: 0; padding: 0; padding-top: 16px;">
+													<td class="m-vedushii-b--img" align="center" style="Margin: 0; padding: 0; padding-top: 16px;padding-bottom: 16px;">
 														<a href="https://htmlacademy.ru/" target="_blank" title="Перейти на страницу розыгрыша призов">
-															<img class="adaptive-img" src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//croods-proposal.png" alt="Розыгрыш призов среди участников" width="278" heigth="278"
+															<img src="https://raw.githubusercontent.com/htmlacademy-email/1077679-play-html-1/master/1-invitation/img//croods-proposal.png" alt="Розыгрыш призов среди участников" width="278" heigth="278"
 																title="Розыгрыш призов среди участников" style="" />
 														</a>
 													</td>
